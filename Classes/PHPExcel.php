@@ -842,6 +842,18 @@ class PHPExcel
         }
         return $this;
     }
+    
+    /**
+     * Remove all named ranges
+     *
+     * @return PHPExcel
+     */
+    public function removeAllNamedRanges()
+    {
+        unset($this->namedRanges);
+        return $this;
+    }
+
 
     /**
      * Get worksheet iterator
